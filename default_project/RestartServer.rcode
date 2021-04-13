@@ -1,0 +1,15 @@
+import .
+
+method file:StopServer.rcode; content:all;
+method file:StartServer.rcode content:all;
+sleep >>150
+clear
+color.white
+Write "["
+color.green
+Write "+"
+color.white
+Write "]"
+color.reset
+Write " Server Restarted!"
+newln

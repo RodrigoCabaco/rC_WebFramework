@@ -2,7 +2,7 @@
 import process
 import filestream
 import split
-
+import framework_methods
 
 DeleteFile file:framework_methods/server.sh;
 str htmcode >>""
@@ -13,13 +13,12 @@ WriteToFile file:framework_methods/server.sh; content:python3 -m http.server 800
 #Method calling example:
 #end method call
 StartProcess file:bash; args:framework_methods/server.sh;
-sleep >>100
+sleep >>200
 newln
-#clear
+clear
 color.green
-Write "rC http server started on 0.0.0.0:8000"
+Write "rC http server started on 0.0.0.0:8000, use the StopServer.rcode method to stop it..."
 newln
 color.reset
-method file:./framework_methods/index; content:all;
-$readline
+method file:./index; content:all;
 
