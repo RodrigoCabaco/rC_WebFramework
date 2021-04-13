@@ -4,15 +4,15 @@ import filestream
 import split
 
 
-DeleteFile file:rcode/server.sh;
+DeleteFile file:framework_methods/server.sh;
 str htmcode >>""
 color.green
-WriteToFile file:rcode/server.sh; content:python3 -m http.server 8000;
+WriteToFile file:framework_methods/server.sh; content:python3 -m http.server 8000;
 #TODO fix -->. lower on method
 
 #Method calling example:
 #end method call
-StartProcess file:bash; args:rcode/server.sh;
+StartProcess file:bash; args:framework_methods/server.sh;
 sleep >>100
 newln
 #clear
@@ -20,6 +20,6 @@ color.green
 Write "rC http server started on 0.0.0.0:8000"
 newln
 color.reset
-method file:./rcode/index; content:all;
+method file:./framework_methods/index; content:all;
 $readline
 
