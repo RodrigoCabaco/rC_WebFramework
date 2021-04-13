@@ -21,4 +21,4 @@ str(final_format+format_first)
 str(final_format+var_to_add)
 str(final_format+format_last)
 DeleteFile file:file_to_change;
-WriteToFile file:file_to_change; content:final_format
+WriteToFile file:file_to_change; content:final_format;
