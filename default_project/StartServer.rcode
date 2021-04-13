@@ -13,7 +13,7 @@ WriteToFile file:framework_methods/server.sh; content:python3 -m http.server 800
 #Method calling example:
 #end method call
 StartProcess file:bash; args:framework_methods/server.sh;
-sleep >>200
+sleep >>500
 newln
 clear
 color.green
