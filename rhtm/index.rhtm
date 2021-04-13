@@ -1,4 +1,5 @@
-<!DOCTYPE RHTML>
+<!DOCTYPE RHTM>
 <html>
-   <h1>$Nome</h1>
+   <link rel="stylesheet" type="text/css" href="../css/style.rcss">  
+   <h1 id="1">$Nome</h1>
 </html>
