@@ -1,0 +1,25 @@
+#!/usr/bin/rC
+import process
+import filestream
+import split
+
+
+DeleteFile file:server.sh;
+str htmcode >>""
+color.green
+WriteToFile file:server.sh; content:python3 -m http.server 8000;
+#TODO fix -->. lower on method
+
+#Method calling example:
+#end method call
+StartProcess file:bash; args:server.sh;
+sleep >>100
+newln
+clear
+color.green
+Write "rC http server started on 0.0.0.0:8000"
+newln
+color.reset
+method file:index; content:all;
+$readline
+

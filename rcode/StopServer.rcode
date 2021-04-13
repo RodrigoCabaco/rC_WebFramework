@@ -1,0 +1,12 @@
+#!/usr/bin/rC
+import process
+import filestream
+
+StartProcess file:pkill; args:python3;
+sleep >>600
+clear
+color.green
+Write "[+] Server Stopped..."
+$readline
+color.reset
+newln

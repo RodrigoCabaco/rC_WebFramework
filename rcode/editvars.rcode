@@ -1,0 +1,23 @@
+#!/usr/bin/rC
+
+#args: file_to_read file_to_change var_sep var_to_add
+
+import split
+import filestream
+import process
+ReadFile file:file_to_read; str:htmcode;
+#Write "Breakpoint"
+
+color.reset
+str format_first >>""
+str final_format >>""
+str format_last >>""
+
+
+getSplit from:htmcode; to:format_first; index:0; separator:var_sep
+getSplit from:htmcode; to:format_last; index:1; separator:var_sep
+str(final_format+format_first)
+str(final_format+var_to_add)
+str(final_format+format_last)
+DeleteFile file:file_to_change;
+WriteToFile file:file_to_change; content:final_format;
