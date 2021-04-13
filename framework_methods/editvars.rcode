@@ -5,8 +5,9 @@
 import split
 import filestream
 import process
+#WriteStr {file_to_read}
 ReadFile file:file_to_read; str:htmcode;
-#Write "Breakpoint"
+
 
 color.reset
 str format_first >>""

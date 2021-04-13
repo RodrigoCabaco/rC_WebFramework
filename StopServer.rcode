@@ -7,6 +7,6 @@ sleep >>600
 clear
 color.green
 Write "[+] Server Stopped..."
-$readline
+
 color.reset
 newln

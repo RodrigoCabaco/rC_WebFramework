@@ -4,9 +4,9 @@ import split
 import process
 
 str file_to_read >>"../rhtm/index.rhtm"
-str file_to_change >> "../html/index.html"
+str file_to_change >> "../index.html"
 str var_sep >>"$Nome"
-str var_to_add >>"Rodrigo"
+str var_to_add >>"Test"
 method file:editvars; content:all;
 
 

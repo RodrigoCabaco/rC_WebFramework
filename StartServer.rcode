@@ -15,11 +15,11 @@ WriteToFile file:rcode/server.sh; content:python3 -m http.server 8000;
 StartProcess file:bash; args:rcode/server.sh;
 sleep >>100
 newln
-clear
+#clear
 color.green
 Write "rC http server started on 0.0.0.0:8000"
 newln
 color.reset
-method file:rcode/index; content:all;
+method file:./rcode/index; content:all;
 $readline
 
